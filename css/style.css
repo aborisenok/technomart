@@ -1,0 +1,150 @@
+/*font-family: 'Cuprum', sans-serif;
+font-family: 'PT Sans', sans-serif;*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Cuprum", Areal, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+
+a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.button{
+	font: inherit;
+	font-size: 14px;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.btn-transparent{
+	/*фон родителя но немного темнее*/
+}
+
+.btn-red{
+	background-color: #ee3643;
+}
+
+/*--------Top bar styles---------*/
+
+.top-bar{
+	background-color: #32425c;
+}
+
+.top-bar__logo{
+	font-size: 24px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: #ee3643;
+}
+
+.top-bar__user-tools{
+	font-size: 17px;
+	color: #ffffff;
+
+	list-style: none;
+}
+
+.user-tools__item{
+	display: inline-block;
+}
+
+
+.user-tools__search input{
+	font: inherit;
+	color: #ffffff;
+
+	background-color: inherit;
+	border: none;
+}
+
+.user-tools__search input::placeholder{
+	color: #ffffff;
+}
+
+.user-tools__order{
+	font-size: 17px;
+
+	background-color: #63a73c;
+}
+
+.user-tools__item:hover{
+	/*делать иконки яркими*/
+	background-color: #243147;
+}
+
+.user-tools__item:not(.user-tools__search) a:focus{
+	color: lightgray;
+
+	background-color: #212a3a;
+}
+
+.user-tools__search input:focus{
+	color:  #32425c;
+
+	background-color: #ffffff;
+}
+
+.user-tools__order:hover{
+	filter: brightness(50%); 
+}
+
+.user-tools__order:focus{
+	filter: brightness(100%); 
+}
+
+/*---- header -----*/
+
+.main-header{
+	background-color: #f3f7f8;
+}
+
+.main-header__desk{
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+	text-align: left;
+	font-style: italic;
+}
+
+.contacts__number{
+	font-size: 21px;
+	color: #ee3643;
+	text-align: center;
+	vertical-align: middle;
+
+	border: 3px solid #ffffff;
+}
+
+.contacts__address{
+	color: #32425c;
+	text-align: center;
+}
+
+.main-header__nav-enter a{
+	color: #000000;
+	font-size: 21px;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #ffffff;
+}
+
+.main-header__nav-enter a:hover{
+	color: #ee3643;
+}
+
+.main-header__nav-enter a:focus{
+	color: lightgray;
+}

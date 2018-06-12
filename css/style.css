@@ -28,7 +28,8 @@ a{
 }
 
 .btn-transparent{
-	/*фон родителя но немного темнее*/
+	background-color: inherit;
+	filter: brightness(0.8);
 }
 
 .btn-red{
@@ -147,4 +148,135 @@ a{
 
 .main-header__nav-enter a:focus{
 	color: lightgray;
+}
+
+.main-header__main-navigation{
+	font-size: 17px;
+
+	background-color: #2f405b;
+	border-bottom: 5px solid #253147;
+}
+
+.main-navigation__item{
+	display: inline-block;
+}
+
+.main-navigation__item:hover{
+	background-color: #253147;
+}
+
+.main-navigation__item a:focus{
+	color: lightgray;
+}
+
+/*----- Main part ----*/
+
+.promo__item h2{
+	font-size: 24px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.promo__material{
+ 	background-color: #ffc145;
+ 	background-image: url("../img/index-page/main/icon-material.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.promo__tool{
+	background-color: #38bee4;
+	background-image: url("../img/index-page/main/icon-tool.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.promo__tech{
+	background-color: #dd92d9;
+	background-image: url("../img/index-page/main/icon-tech.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.promo__sale{
+	background-color: #8fd890;
+	background-image: url("../img/index-page/main/icon-cart.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.promo__delivery{
+	background-color: #ffc145;
+	background-image: url("../img/index-page/main/icon-delivery.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.promo__slider{
+	background-image: url("../img/index-page/main/slider-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.slider-button{
+	background-color: transparent;
+	border: none;
+}
+
+.slider-button span{
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+.slider-button-back{
+	background-image: url("../img/index-page/main/slider-icon-left.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.slider-button-next{
+	background-image: url("../img/index-page/main/slider-icon-right.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*----Popular items ----*/
+
+.popular-prod__header{
+	background-color: #f9f5f1;
+}
+
+.popular-prod__header h2{
+	font-size: 30px;
+	color: #32425c;
+}
+
+.popular-prod__item{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+
+	display: inline-block;
+	border: 2px solid #ebebeb;
+}
+
+.popular-prod__item p{
+	
+	
+	line-height: 20px;
+	text-align: center;
+}
+
+.item__old-price{
+	font-size: 17px;
+	color: #aaaaaa;
+	text-decoration: line-through;
+}
+
+.item__new-price{
+	font-size: 17px;
+	color: #ffffff;
+
+	background-color: #ee3643;
 }

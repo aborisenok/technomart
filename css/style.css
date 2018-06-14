@@ -39,8 +39,23 @@ a{
 }
 
 .btn-transparent{
-	background-color: inherit;
-	filter: brightness(0.8);
+	display: block;
+	box-sizing: border-box;
+	padding: 9px;
+
+	width: 135px;
+	height: 40px;
+
+	border-radius: 5px;
+	background-color: rgba(133, 133, 133, 0.3);
+}
+
+.btn-transparent:hover{
+	background-color: rgba(133, 133, 133, 0.5);
+}
+
+.btn-transparent:focus{
+	background-color: rgba(133, 133, 133, 0.7);
 }
 
 .btn-red{
@@ -203,7 +218,8 @@ a{
 /*---- header -----*/
 
 .main-header{
-	margin-bottom: 50px;
+	margin-bottom: 55px;
+	padding-bottom: 60px;
 
 	background-color: #f3f7f8;
 }
@@ -227,15 +243,33 @@ a{
 }
 
 .main-header__contacts{
+	margin-left: 70px;
 	display: flex;
 	flex-direction: column;
 }
 
 .contacts__number{
+	box-sizing: border-box;
+	padding: 10px 50px 10px 70px;
+
+	position: relative;
+
 	font-size: 21px;
 	color: #ee3643;
 	
 	border: 3px solid #ffffff;
+}
+
+.contacts__number::before{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 25px;
+	height: 25px;
+	background-image: url("../img/index-page/header/icon-phone.png");
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .contacts__address{
@@ -260,6 +294,24 @@ a{
 
 .nav-enter__sign-in{
 	width: 120px;
+
+	position: relative;
+}
+
+.nav-enter__sign-in a{
+	padding-left: 20px;
+}
+
+.nav-enter__sign-in:before{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 25px;
+	height: 25px;
+	background-image: url("../img/index-page/header/icon-login.png");
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .nav-enter__log-in{
@@ -286,8 +338,11 @@ a{
 }
 
 .main-header__main-navigation{
+	
 	flex-basis: 100%;
 	height: 60px;
+	box-sizing: border-box;
+	margin-top: 35px;
 
 	font-size: 17px;
 
@@ -295,8 +350,28 @@ a{
 	border-bottom: 5px solid #253147;
 }
 
+.main-header__main-navigation ul{
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
 .main-navigation__item{
-	display: inline-block;
+	flex-grow: 1;
+}
+
+.main-navigation__item a{
+	display: block;
+	height: 100%;
+	padding-top: 15px;
+
+	text-align: center;
 }
 
 .main-navigation__item:hover{
@@ -304,50 +379,60 @@ a{
 }
 
 .main-navigation__item a:focus{
-	color: lightgray;
+	color: gray;
 }
 
 /*----- Main part ----*/
 
+.promo table{
+	border-spacing: 20px;
+	margin: -20px;
+}
+
+.promo td{
+	height: 125px;
+	width: 300px;
+	vertical-align: top;
+
+	padding-left: 25px;
+}
+
+.promo__item{
+	background-repeat: no-repeat;
+	background-position: 85% 50%;
+}
+
 .promo__item h2{
 	font-size: 24px;
+	text-transform: none;
 	font-weight: 700;
 	color: #ffffff;
+	letter-spacing: 1px;
 }
 
 .promo__material{
  	background-color: #ffc145;
  	background-image: url("../img/index-page/main/icon-material.png");
-	background-repeat: no-repeat;
-	background-position: right;
 }
 
 .promo__tool{
 	background-color: #38bee4;
 	background-image: url("../img/index-page/main/icon-tool.png");
-	background-repeat: no-repeat;
-	background-position: right;
 }
 
 .promo__tech{
 	background-color: #dd92d9;
 	background-image: url("../img/index-page/main/icon-tech.png");
-	background-repeat: no-repeat;
-	background-position: right;
 }
 
 .promo__sale{
 	background-color: #8fd890;
 	background-image: url("../img/index-page/main/icon-cart.png");
-	background-repeat: no-repeat;
-	background-position: right;
 }
 
 .promo__delivery{
 	background-color: #ffc145;
 	background-image: url("../img/index-page/main/icon-delivery.png");
-	background-repeat: no-repeat;
-	background-position: right;
 }
 
 .promo__slider{

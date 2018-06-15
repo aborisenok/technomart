@@ -55,9 +55,9 @@
 		</div>
 	</header>
 
-	<main class="container">
+	<main>
 
-		<section class="promo">
+		<section class="promo container">
 			<table>
 				<tr>
 					<td class="promo__item promo__material">
@@ -80,11 +80,11 @@
 							<figure class="slider-content">
 								<div class="slider-content__header">
 									<h2>Дрели</h2>
-									<p>Соседям на радость</p>
+									<p>Соседям на радость!</p>
 								</div>
 							</figure>
-							<button class="slider-button"><span class="slider-button-back"></span></button>
-							<button class="slider-button"><span class="slider-button-next"></span></button>
+							<button class="slider-button slider-button-back"><span></span></button>
+							<button class="slider-button slider-button-next"><span></span></button>
 							<a href="#" class="button btn-red">Открыть каталог</a>
 					</td>
 					<td class="promo__item promo__sale">
@@ -101,59 +101,67 @@
 			</table>
 		</section>
 
-		<section class="popular popular-prod">
+		<section class="popular popular-prod container">
 			<div class="popular__header">
 				<h2>Популярный товары:</h2>
 				<a href="#" class="button btn-red">Все популярные товары</a>
 			 </div>
 			<ul>
 				<li class="popular__item">
-					<img src="img/index-page/main/tool-32961.jpg" alt="Товар">
+					<div class="border">
+						<img src="img/index-page/main/tool-32961.jpg" alt="Товар">
+					</div>
 					<p>
 						Перфоратор BOSCH<br>
 						BFG 9000
 					</p>
-					<span class="item__old-price">32500 P.</span><br>
+					<span class="item__old-price">32500 P.</span>
 					<span class="item__new-price">25500 P.</span>
 				</li>	
 				<li class="popular__item">
-					<img src="img/index-page/main/tool-18927.jpg" alt="Товар">
+					<div class="border">
+						<img src="img/index-page/main/tool-18927.jpg" alt="Товар">
+					</div>
 					<p>
 						Перфоратор BOSCH<br>
 						BFG 3000
 					</p>
-					<span class="item__old-price">22500 P.</span><br>
+					<span class="item__old-price">22500 P.</span>
 					<span class="item__new-price">15500 P.</span>
 				</li>
 				<li class="popular__item">
-					<img src="img/index-page/main/tool-18925.jpg" alt="Товар">
+					<div class="border">
+						<img src="img/index-page/main/tool-18925.jpg" alt="Товар">
+					</div>
 					<p>
 						Перфоратор BOSCH<br>
 						BFG 6000
 					</p>
-					<span class="item__old-price">30500 P.</span><br>
+					<span class="item__old-price">30500 P.</span>
 					<span class="item__new-price">25500 P.</span>
 				</li>	
 				<li class="popular__item">
-					<img src="img/index-page/main/tool-945.jpg" alt="Товар">
+					<div class="border">
+						<img src="img/index-page/main/tool-945.jpg" alt="Товар">
+					</div>
 					<p>
 						Перфоратор BOSCH<br>
 						BFG 2000
 					</p>
-					<span class="item__old-price">19500 P.</span><br>
+					<span class="item__old-price">19500 P.</span>
 					<span class="item__new-price">12500 P.</span>
 				</li>
 			</ul>
 		</section>
 
-		<section class="pupular popular-brand">
+		<section class="pupular popular-brand container">
 			<div class="popular__header">
 				<h2>Популярные производители:</h2>
 				<a href="#" class="button btn-red">Все производители</a>
 			</div>	
 			<ul>
 				<li class="popular__item">
-					<a href="#"><img src="img/index-page/main/brand-bosh.jpg"></a>
+					<a href="#"><img src="img/index-page/main/brand-bosch.jpg"></a>
 				</li>
 				<li class="popular__item">
 					<a href="#"><img src="img/index-page/main/brand-makita.jpg"></a>
@@ -180,31 +188,33 @@
 		</section>
 
 		<section class="features">
-			<h2>Сервисы</h2>
-			<p>Хороший интеренет магазин отличается от плохого не только ценами!<br>
+			<div class="container">
+				<h2>Сервисы</h2>
+				<p>Хороший интеренет магазин отличается от плохого не только ценами!<br>
 			   Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.</p>
-			<div class="features__preview">
-				<ul class="features__preview__items">
-					<li class="preview__item preview__item-active" >Доставка</li>
-					<li class="preview__item">Гарантия</li>
-					<li class="preview__item">Кредит</li>
-				</ul>
-		    	<div class="preview__description">	
-					<h2>Доставка</h2>
-					<p>Мы с удовольствием доставим ваш товар прямо<br>
+				<div class="features__preview">
+					<ul class="features__preview__items">
+						<li class="preview__item preview__item-active" >Доставка</li>
+						<li class="preview__item">Гарантия</li>
+						<li class="preview__item">Кредит</li>
+					</ul>
+		    		<div class="preview__description">	
+						<h2>Доставка</h2>
+						<p>Мы с удовольствием доставим ваш товар прямо<br>
 					   к вашему подъезду совершенно бесплатно!<br>
 					   Ведь мы неплохо зарабатываем,<br>
 					   поднимая его на ваш этаж!	
-					</p>
-					<img src="img/index-page/main/fitch-delivery.png">
+						</p>
+						
+					</div>
 				</div>
 			</div>
 		</section>
-
+	<div class="info container">	
 		<section class="about">
 			<h2>Компания "Техномарт"</h2>
-			<p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
-			<p>Мы можем доставить ваш товар в самые отдаленые точки России!<br>
+			<p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
+			<p>Мы можем доставить ваш товар в самые отдаленые точки России!
 			   Техномарт работает со многими транспортными компаниями.</p>
 			<ul>
 				<li>-Деловые линии</li>
@@ -221,6 +231,7 @@
 			<img src="img/index-page/main/map-small.jpg" alt="Карта"> 
 			<a href="#" class="button btn-red">Заблудились? Напишите нам!</a>
 		</section>
+	</div>	
 	</main>
 
 	<footer class="main-footer">

@@ -59,9 +59,13 @@ a{
 }
 
 .btn-red{
+	padding: 10px 50px;
 	font-size: 14px;
+	line-height: 16px;
 
 	background-color: #ee3643;
+
+	border-radius: 5px;
 }
 
 .btn-red:hover{
@@ -384,6 +388,10 @@ a{
 
 /*----- Main part ----*/
 
+.promo{
+	margin-bottom:  50px;
+}
+
 .promo table{
 	border-spacing: 20px;
 	margin: -20px;
@@ -436,12 +444,38 @@ a{
 }
 
 .promo__slider{
+	position: relative;
+
+	padding-top: 25px;
 	background-image: url("../img/index-page/main/slider-1.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
+.slider-content{
+	margin: 0;
+}
+
+.promo__slider h2{
+	padding: 0;
+	margin: 0;
+	
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.promo__slider p{
+	margin: 0;
+	margin-top: 5px;
+	
+	font-size: 18px;
+	color: #ffffff
+}
+
 .slider-button{
+	position: absolute;
+
 	background-color: transparent;
 	border: none;
 }
@@ -453,34 +487,92 @@ a{
 }
 
 .slider-button-back{
+	top: 45%;
+	left: 0;
+}
+
+.slider-button-next{
+	top: 45%;
+	right: 0;
+}
+
+
+.slider-button-back span{
 	background-image: url("../img/index-page/main/slider-icon-left.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.slider-button-next{
+.slider-button-next span{
 	background-image: url("../img/index-page/main/slider-icon-right.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
+.slider-button:hover span{
+	opacity: 0.5;
+}
+
+.promo__slider .button{
+	position: absolute;
+	bottom: 10%;
+}
+
 /*----Popular items ----*/
 
 .popular__header{
+	display: flex;
+	justify-content:space-between;
+	align-items: center; 
+	padding: 25px 20px;
+	
 	background-color: #f9f5f1;
 }
 
 .popular__header h2{
+	margin: 0;
+
 	color: #32425c;
 }
 
+.popular-prod ul{
+	padding: 0;
+	margin: 15px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
 .popular__item{
+	width: 220px;
+	height: 320px;
+	box-sizing: border-box;
+
+	padding-top: 15px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+
 	font-family: 'PT Sans', sans-serif;
 	font-size: 18px;
 	font-weight: 700;
 
-	display: inline-block;
+	list-style: none;
 	border: 2px solid #ebebeb;
+}
+
+.popular__item .border{
+	display: flex;
+
+	overflow: hidden;
+
+	width: 220px;
+	height: 130px;
+}
+
+.popular__item img{
+	margin: 0 auto;
+	align-self: center;
 }
 
 .popular__item:hover{
@@ -488,23 +580,59 @@ a{
 }
 
 .popular__item p{
+	margin: 30px 0 10px 0;
+
 	line-height: 20px;
 	text-align: center;
 }
 
 .item__old-price{
+	margin-bottom: 10px;
+
 	font-size: 17px;
 	color: #aaaaaa;
 	text-decoration: line-through;
 }
 
 .item__new-price{
+	display: block;
+	padding: 5px 35px;
+
+	position: relative;
+
 	font-size: 17px;
-	color: #000000;
+	color: #ffffff; 
 
 	background-color: #ee3643;
+	background:linear-gradient(-135deg, #ffffff 0%, #ffffff 10%, #ef3341 10%, #ef3341 100%);
 }
- 
+
+.popular-brand{
+	margin-bottom: 70px;	
+ }
+
+ .popular-brand ul{
+ 	padding: 0;
+
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: space-between;
+ }
+
+ .popular-brand .popular__item{
+ 	margin-bottom: 20px;
+ 	height: 145px;
+ }
+
+ .popular-brand .popular__item a{
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center; 
+
+ 	width: 100%;
+ 	height: 100%;
+ }
+
 .popular-brand .popular__item a:focus{
 	box-shadow: 0 0 2px 1px black;
 	filter: saturate(50%);
@@ -513,22 +641,68 @@ a{
 /*---Services---*/
 
 .features{
-	font-size: 13px;
+	margin-bottom: 60px;
+
+	font-size: 14px;
 	color: #000000;
 
 	background-color: #f3f7f8; 
 }
 
+.features .container{
+	display: flex;
+	flex-direction: column; 
+
+	padding-top: 50px;
+/*	padding-bottom: 100px;*/
+}
+
+.features__preview{
+	display: flex;
+	justify-content: flex-start; 
+	align-items: stretch;
+
+	padding-top: 50px; 
+	
+}
 
 .features__preview ul{
+	margin: 0;
+	margin-right: 80px;
+	padding: 0;
+	padding-bottom: 100px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; 
+
 	list-style: none;
 }
 
 .preview__item{
+	width: 240px;
+	box-sizing: border-box;
+	padding: 17px 0 17px 20px;
+
 	font-size: 21px;
 	color: #ffffff;
 
 	background-color: #2e405c;
+
+	border-bottom: 2px solid #4d637d;
+}
+
+.preview__description h2{
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.preview__description{
+	flex-grow: 1;
+	background-image: url("../img/index-page/main/fitch-delivery.png");
+	background-repeat: no-repeat;
+	background-position: 100%;
+
 }
 
 .preview__item-active{
@@ -546,13 +720,31 @@ a{
 }
 
 /*--- About  ---*/
+.info.container{
+	display: flex;
+}
+
 .about{
-	font-size: 13px;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding-right: 150px;
+
+	font-size: 14px;
 	color: #000000;
 	line-height: 30px;
 }
 
-.about ul{
+.about p{
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.about ul{	
+	margin: 0;
+	margin-bottom: 45px;
+
 	font-size: 18px;
 
 	list-style: none;
@@ -560,7 +752,33 @@ a{
 
 /*--- Contacts---*/
 
+.contacts{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+
+	margin-left: auto;
+}
+
+.contacts p{
+	padding: 0;
+	margin: 0;
+}
+
+.contacts img{
+	padding-top: 20px;
+}
+
+
+.contacts a{
+	white-space: nowrap;
+}
+
 /*Footer*/
+
+.main-footer{
+	margin-top: 100px;
+}
 
 /*Footer top*/
 

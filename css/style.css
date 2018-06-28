@@ -1,5 +1,3 @@
-/*font-family: 'Cuprum', sans-serif;
-font-family: 'PT Sans', sans-serif;*/
 
 body{
 	margin: 0;
@@ -418,9 +416,25 @@ a{
 	letter-spacing: 1px;
 }
 
+
 .promo__material{
+	position: relative;
+
  	background-color: #ffc145;
  	background-image: url("../img/index-page/main/icon-material.png");
+}
+
+.promo__material::after{
+	content: "";
+	position: absolute;
+
+	top: 0;
+	right: 0;
+
+	width: 60px;
+	height: 59px;
+
+ 	background-image: url("../img/index-page/main/new.png");
 }
 
 .promo__tool{
@@ -547,9 +561,8 @@ a{
 	height: 320px;
 	box-sizing: border-box;
 
-	padding-top: 15px;
-
 	display: flex;
+	justify-content: flex-end;
 	flex-direction: column;
 	align-items: center; 
 
@@ -559,6 +572,112 @@ a{
 
 	list-style: none;
 	border: 2px solid #ebebeb;
+}
+
+.popular-prod .popular__item{
+	cursor: pointer;
+
+	padding-bottom: 15px;
+}
+
+.popular__hover-show{
+	display: none;
+}
+
+.popular__hover-show button{
+	cursor: pointer;
+
+	margin-bottom: 20px;
+}
+
+.popular__hover-show .btn-green{
+	display: block;
+	box-sizing: border-box;
+	padding: 9px;
+
+	width: 135px;
+	height: 40px;
+
+	position: relative;
+
+	border-radius: 5px;
+	border: none;
+	background-color: #63a63e;
+}
+
+.popular__hover-show .btn-green::before{
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 17px;
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/index-page/header/icon-cart.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.popular__hover-show .btn-green:hover{
+	background-color: #5fbb2d;
+}
+
+.popular__hover-show .btn-green:focus{
+	outline: none;
+	
+	background-color: #518534;
+}
+
+.popular__hover-show .btn-border{
+	color: #32425c;
+
+	display: block;
+	box-sizing: border-box;
+	padding: 4px;
+
+	width: 135px;
+	height: 40px;
+
+	border-radius: 5px;
+	border: 3px solid #63a63e;
+	background-color: white;
+}
+
+.popular__hover-show .btn-border:hover{
+	border-color: #32425c;
+}
+
+.popular__hover-show .btn-border:focus{
+	outline: none;
+
+	color: #c1c6ce;
+	border-color: #c1c6ce;
+}
+
+
+.popular-prod .popular__item:hover .popular__hover-show{
+	display: flex;
+	flex-direction: column;
+}
+
+.popular-prod .popular__item:hover .border{
+	display: none;
+}
+
+.popular-prod .popular__item:last-child{
+	position: relative;
+}
+
+.popular-prod .popular__item:last-child::after{
+	content: "";
+	position: absolute;
+
+	top: 0;
+	right: 0;
+
+	width: 60px;
+	height: 59px;
+
+ 	background-image: url("../img/index-page/main/new.png");
 }
 
 .popular__item .border{
